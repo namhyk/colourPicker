@@ -1,14 +1,50 @@
-header {
-  display: flex;
+body{
+  font-family: 'Inter', sans-serif;
 }
 
-main div{
-  width: 20%;
-  /* border: 1px solid black; */
+header {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: #1f2937;
+  height: 90px;
+  width: 550px;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15)
+}
+header input, select, button{
+  height: 42px;
+}
+header button{
+  background-color: #3b4b60;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 12;
+  font-weight: medium;
+  width: 123px;
+}
+header select{
+  width: 312px;
+  background-color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 3px;
+  color: #d5d4d8;
+}
+header input{
+  width: 61px;
 }
 
 main {
   display: flex;
   width: 550px;
   height: 550px;
+  position: relative;
+  top: 0;
+}
+main div{
+  width: 20%;
 }
